@@ -1,4 +1,4 @@
-#impleementing a simple calculator class with basic arithmetic operations using classes
+#Impleementing a simple calculator class with basic arithmetic operations using classes
 
 class Calculator:
 
