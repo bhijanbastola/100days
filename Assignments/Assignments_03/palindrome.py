@@ -1,8 +1,5 @@
 a=input("enter a string:").lower().strip()
 reverse="".join(reversed(a))
 #print(reverse)
-if a==reverse:
-    print("palindrome")
-else:
-    print("not a palindrome")
-
+check =lambda a:print("palindrome") if a==reverse else print("not palindrome")
+print(check(a))

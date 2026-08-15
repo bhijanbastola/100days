@@ -39,3 +39,5 @@ print((tax))
 net_revenue = reduce(lambda total, amount: total + amount, tax, 0)
 
 print(f"Net Revenue: ${net_revenue:.2f}")
+
+
