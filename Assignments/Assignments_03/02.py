@@ -28,7 +28,7 @@ transactions = [
 ]
 
 #filter
-non_completed=filter(lambda t:t['status']=="pending",transactions)
+non_completed=filter(lambda t:t['status']=="completed",transactions)
 print((non_completed))
 
 #map
@@ -36,7 +36,7 @@ tax=map(lambda a:a["amount"]*1.10,non_completed)
 print((tax))
 
 #reduce
-net_revenue = reduce(lambda total, amount: total + amount, tax, 0)
+net_revenue = reduce(lambda total, amount: total + amount, tax)
 
 print(f"Net Revenue: ${net_revenue:.2f}")
 
