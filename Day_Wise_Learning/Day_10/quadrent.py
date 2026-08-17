@@ -27,9 +27,8 @@ class Quadrant:
 
 
         }
-        return quadrent_mapping
-
-q=Quadrant()
+        return quadrent_mapping.get((self.x>0,self.y>0))
+q=Quadrant(0,0)
 print(q.quad())
 
 
