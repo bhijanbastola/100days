@@ -3,13 +3,14 @@ class InsufficientBalanceException(Exception):
     pass
 
 
-def withdraw_balance(amount):
-    balance = 10000
+def withdraw_balance(balance,amount):
+    
 
     if amount > balance:
-        raise InsufficientBalanceException("Not sufficient balance")
+        #raise InsufficientBalanceException("Not sufficient balance")
+        raise ValueError("Insuiificent balance")
 
     return f"Remaining balance: {balance - amount}"
 
-
-withdraw_balance(12000)
+if __name__=="__main__":
+    withdraw_balance(12000,10000)
