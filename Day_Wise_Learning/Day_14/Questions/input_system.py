@@ -10,4 +10,3 @@ while True:
         print("You entered the correct value")
         break
 
-print("Loop has stopped")
